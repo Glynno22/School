@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="font-sans antialiased bg-gray-100">
+<body class="font-sans antialiased fixed-x top-0 left-0 w-full bg-gray-100">
 
     <!-- Header avec Hamburger Menu -->
     <header class="bg-blue-700 text-white ">
@@ -22,7 +22,7 @@
                 <a href="#" class="hover:underline">Services</a>
                 <a href="#" class="hover:underline">Bourse</a>
                 <a href="#" class="hover:underline">Carrière</a>
-                <a href="#" class="hover:underline">Contact</a>
+                <a href="{{url('/contact')}}" class="hover:underline">Contact</a>
             </nav>
             <button id="hamburger" class="md:hidden focus:outline-none">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
             <a href="#" class="block hover:underline">Services</a>
             <a href="#" class="block hover:underline">Bourse</a>
             <a href="#" class="block hover:underline">Carrière</a>
-            <a href="#" class="block hover:underline">Contact</a>
+            <a href="{{url('/contact')}}" class="block hover:underline">Contact</a>
         </nav>
     </header>
 
@@ -114,7 +114,7 @@
         <div class="container mx-auto text-center fade-in-right ">
             <h2 class="text-3xl font-bold mb-4 text-blue-700">Newsletter</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-9 items-center  ">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-9 items-center mx-2  ">
                 <div class="">
                     <img src="/mnt/data/Accueill.png" alt="Image 3" class="w-full h-full object-cover">
                 </div>
