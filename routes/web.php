@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/etude/allemagne', function () {
+    return view('etudeAllemagne');
+});
