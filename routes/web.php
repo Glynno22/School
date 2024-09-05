@@ -24,3 +24,7 @@ Route::get('/contact', function () {
 Route::get('/etude/allemagne', function () {
     return view('etudeAllemagne');
 });
+
+Route::get('/etude', function () {
+    return view('etude');
+});
