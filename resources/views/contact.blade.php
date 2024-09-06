@@ -1,45 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
+@extends('master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Newlester</title>
-    @vite('resources/css/app.css')
-</head>
-
-<body class="font-sans bg-gray-100 text-gray-900">
-    <!-- Navigation Bar -->
-    <nav class="bg-blue-700 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-white font-bold text-lg">LOGO/NOM</div>
-            <div class="hidden md:flex space-x-6 text-white">
-                <a href="{{url('/')}}" class="hover:text-orange-500">Accueil</a>
-                <a href="#" class="hover:text-orange-500">Etude</a>
-                <a href="#" class="hover:text-orange-500">Services</a>
-                <a href="#" class="hover:text-orange-500">Bourse</a>
-                <a href="#" class="hover:text-orange-500">Carrière</a>
-                <a href="#" class="text-orange-500">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-button" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden mt-2">
-            <a href="#" class="block px-4 py-2 text-white hover:text-orange-500">Accueil</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-orange-500">Etude</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-orange-500">Services</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-orange-500">Bourse</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-orange-500">Carrière</a>
-            <a href="#" class="block px-4 py-2 text-orange-500">Contact</a>
-        </div>
-    </nav>
+@section('content')
 
     <!-- Contact Section -->
     <section class="container mx-auto p-8">
@@ -128,19 +89,7 @@
         </div>
     </section>
 
-    <!-- Direct Contact Section -->
-    <!-- Footer -->
-   
 
 
-
-    <!-- JavaScript for Mobile Menu -->
-    <script>
-        document.getElementById('menu-button').addEventListener('click', function () {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-
-</html>
+    @endsection
+    

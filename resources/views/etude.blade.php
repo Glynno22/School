@@ -1,89 +1,79 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'Études - Orientation</title>
-    @vite('resources/css/app.css')
-    {{-- <script src="https://cdn.tailwindcss.com"></script>--}}
-    <style>
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
+@extends('master')
 
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .slide-in {
-            animation: slideIn 1s ease-out;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <header class="bg-blue-600 text-white">
-        <div class=" mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">LOGO/NOM</div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#" class="hover:underline">Accueil</a>
-                <a href="#" class="hover:underline">Étude</a>
-                <a href="#" class="hover:underline">Services</a>
-                <a href="#" class="hover:underline">Bourse</a>
-                <a href="#" class="hover:underline">Carrière</a>
-                <a href="#" class="hover:underline">Contact</a>
-            </nav>
-            <!-- Hamburger Menu -->
-            <button id="hamburger" class="md:hidden flex items-center">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Accueil</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Étude</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Bourse</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Carrière</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="slide-in mx-auto px-4 py-12 text-center bg-white">
-        <h1 class="text-4xl font-bold mb-4">ETUDES</h1>
-        <p class="text-lg">Accueil / Etude</p>
-        <p class="mt-6 text-xl">Pour préparer votre réussite, nous vous proposons des solutions d'immigration fiable.</p>
-    </section>
-
-    <!-- Countries Section -->
-    <section class="slide-in container mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-        <div class="bg-white p-6 shadow-lg rounded-lg">ALLEMAGNE</div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">FRANCE</div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">BELGIQUE</div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">CANADA</div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">CONGO</div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">AUTRES</div>
-    </section>
-
-    <!-- News Section -->
-    <section class="slide-in  mx-auto px-4 py-12 text-center bg-white">
-        <h2 class="text-3xl font-bold mb-4">ACTUALITÉS GLOBAL (ETUDE)</h2>
-        <div class="bg-gray-200 p-6 shadow-lg rounded-lg">
-            <p>Saint Louis University demande des admissions pour 2025, débutant le 06/09/2024</p>
-        </div>
-    </section>
+@section('content')
 
     
-</body>
-</html>
-                
+<!-- Hero Section -->
+<div class="container mx-auto mt-10 text-center slide-in">
+    <h1 class="text-4xl font-bold text-blue-800">ETUDES</h1>
+    <p class="text-gray-600">ACCUEIL / ETUDE</p>
+    <p class="text-xl mt-5">Pour préparer votre réussite, nous vous proposons des solutions d'immigration fiable.</p>
+</div>
+
+<!-- Pays Section -->
+<div class=" container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 gap-6  fade-in-left">
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
+        <p class="text-xl font-semibold">ALLEMAGNE</p>
+    </div>
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
+        <p class="text-xl font-semibold">FRANCE</p>
+    </div>
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
+        <p class="text-xl font-semibold">BELGIQUE</p>
+    </div>
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
+        <p class="text-xl font-semibold">CANADA</p>
+    </div>
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
+        <p class="text-xl font-semibold">CONGO</p>
+    </div>
+    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
+        <p class="text-xl font-semibold">AUTRES</p>
+    </div>
+</div>
+
+<!-- Actualités Global Section -->
+<div class="container mx-auto mt-10">
+    <h2 class="text-2xl font-bold text-center text-blue-800 mb-8 slide-in">ACTUALITES GLOBAL (ETUDE)</h2>
+
+    <!-- Carrousel -->
+    <div class="relative w-full overflow-hidden fade-in-left">
+        <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+            <!-- First Slide -->
+            <div class="w-full flex-shrink-0">
+                <div class="flex">
+                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
+                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+                </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="w-full flex-shrink-0">
+                <div class="flex">
+                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
+                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+                </div>
+            </div>
+            <!-- Third Slide -->
+            <div class="w-full flex-shrink-0">
+                <div class="flex">
+                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
+                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination / Navigation -->
+    <div class="flex justify-center space-x-3 mt-4">
+        <button class="w-3 h-3 rounded-full bg-blue-600 pagination button" onclick="moveCarousel(0)"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-400 pagination button" onclick="moveCarousel(1)"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-400 pagination button" onclick="moveCarousel(2)"></button>
+    </div>
+</div>
+
+<!-- JS for Carousel -->
+
+
+@endsection
+
