@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{--<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -11,46 +11,12 @@
 </head>
 
 <body class="font-sans antialiased fixed-x top-0 left-0 w-full bg-gray-100">
+--}}
+   
 
-    <!-- Header avec Hamburger Menu -->
-    <header class="bg-blue-700 text-white ">
-        <div class="container mx-auto flex justify-between items-center py-4">
-            <div class="text-2xl font-bold">LOGO/NOM</div>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#" class="text-yellow-400 hover:underline">Accueil</a>
-                <a href="#" class="hover:underline">Étude</a>
-                <a href="#" class="hover:underline">Services</a>
-                <a href="#" class="hover:underline">Bourse</a>
-                <a href="#" class="hover:underline">Carrière</a>
-                <a href="{{url('/contact')}}" class="hover:underline">Contact</a>
-            </nav>
-            <button id="hamburger" class="md:hidden focus:outline-none">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
+@extends('master')
 
-        <!-- Mobile Menu -->
-        <nav id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white space-y-2 p-4 fade-in-left">
-            <a href="#" class="block text-yellow-400 hover:underline">Accueil</a>
-            <a href="#" class="block hover:underline">Étude</a>
-            <a href="#" class="block hover:underline">Services</a>
-            <a href="#" class="block hover:underline">Bourse</a>
-            <a href="#" class="block hover:underline">Carrière</a>
-            <a href="{{url('/contact')}}" class="block hover:underline">Contact</a>
-        </nav>
-    </header>
-
-
-    <section class="h-3/5 w-screen bg-green-600 border">
-
-        <div >
-        
-        </div>
-
-    </section>
+@section('content')
 
     <!-- Hero Section avec Carrousel -->
     <section class="relative bg-white">
@@ -155,34 +121,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-700 text-white py-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
-            <p>Nous contacter : info@votreentreprise.com | +33 1 23 45 67 89</p>
-        </div>
-    </footer>
 
-    <script>
-        document.getElementById("hamburger").addEventListener("click", function () {
-    var menu = document.getElementById("mobile-menu");
-    menu.classList.toggle("hidden");
-});
 
-// IntersectionObserver pour l'animation
-const elementsToAnimate = document.querySelectorAll('.fade-in, .slide-up, .fade-in-left, .fade-in-right');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-active');
-        }
-    });
-});
-
-elementsToAnimate.forEach((el) => observer.observe(el));
-    </script>
-
-</body>
-
-</html>
+    @endsection

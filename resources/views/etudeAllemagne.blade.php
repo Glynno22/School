@@ -1,66 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Étude en Allemagne</title>
-    @vite('resources/css/app.css')
-    <style>
-        /* Custom Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes scaleIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-        .fade-in { animation: fadeIn 1s ease-in-out; }
-        .slide-in { animation: slideIn 1s ease-in-out; }
-        .scale-in { animation: scaleIn 1s ease-in-out; }
-    </style>
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <!-- Navbar -->
-    <header class="bg-blue-700 text-white shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="text-2xl font-bold">LOGO/NOM</div>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-gray-200">Accueil</a>
-                <a href="#" class="hover:text-gray-200">Étude</a>
-                <a href="#" class="hover:text-gray-200">Services</a>
-                <a href="#" class="hover:text-gray-200">Bourse</a>
-                <a href="#" class="hover:text-gray-200">Carrière</a>
-                <a href="#" class="hover:text-gray-200">Contact</a>
-            </nav>
-            <div class="md:hidden">
-                <button id="hamburger" class="focus:outline-none">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 space-y-2 p-4">
-            <a href="#" class="block text-white">Accueil</a>
-            <a href="#" class="block text-white">Étude</a>
-            <a href="#" class="block text-white">Services</a>
-            <a href="#" class="block text-white">Bourse</a>
-            <a href="#" class="block text-white">Carrière</a>
-            <a href="#" class="block text-white">Contact</a>
-        </div>
-    </header>
+@extends('master')
+
+@section('content')
+
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center" style="background-image: url('img1.jpg');">
+    <section class="relative bg-cover bg-center slide-in" style="background-image: url({{asset('img1.jpg')}});">
         <div class="bg-blue-800 bg-opacity-70 text-white py-20 px-6 text-center">
             <h1 class="text-4xl font-bold mb-4 slide-in">services offerts</h1>
-            <p class="text-xl mb-8 fade-in">Consultation Personnalisée</p>
-            <p class="text-lg fade-in">Obtenez des conseils d'experts adaptés à votre situation unique pour faciliter votre processus d'immigration</p>
+            <p class="text-xl mb-8 ">Consultation Personnalisée</p>
+            <p class="text-lg ">Obtenez des conseils d'experts adaptés à votre situation unique pour faciliter votre processus d'immigration</p>
         </div>
     </section>
 
@@ -68,7 +16,7 @@
    <!-- Universities Section -->
     <section class="container mx-auto py-12">
         <h2 class="text-3xl font-bold text-center mb-8">NOS UNIVERSITÉS</h2>
-        <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 fade-in-left">
             <!-- University Carousel -->
             <div id="carouselExample" class="relative">
                 <div class="overflow-hidden rounded-lg shadow-lg w-full h-64">
@@ -100,7 +48,7 @@
 
     <!-- Procedure Section fade-in-->
     <section class="bg-blue-700 text-white py-12">
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center fade-in-right">
             <h2 class="text-3xl font-bold mb-6">PROCEDURE</h2>
             <p class="mb-4 ">QUESTION 1: Reponse a la question 1 de manier exita...</p>
             <p class="mb-4 ">QUESTION 2: Reponse a la question 2 de manier exita...</p>
@@ -110,7 +58,7 @@
     </section>
 <br>
    <!-- Satisfaction Section -->
-    <section class="container mx-auto py-12  text-center bg-blue-500 w-full">
+    <section class="container mx-auto py-12  text-center bg-blue-500 w-full fade-in-left">
         <h2 class="text-3xl font-bold mb-8">Aimeriez-vous faire des études / Formations en Allemagne ?</h2>
         <div class="space-x-4">
             <button id="yesBtn" class="bg-blue-300 text-white px-6 py-3 rounded-full hover:bg-blue-700 scale-in">OUI</button>
@@ -156,72 +104,8 @@
 
 
 
-    <!-- Footer -->
     
-    <!-- end Footer -->
+    @endsection
 
+    
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('hamburger').onclick = function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        };
-    </script>
-
-<script>
-    const modal = document.getElementById('modal');
-    const modalContent = document.getElementById('modalContent');
-    const closeModal = document.getElementById('closeModal');
-
-    document.getElementById('yesBtn').onclick = function() {
-        modalContent.innerHTML = `
-            <h3 class="text-2xl font-bold mb-4">Contactez un Responsable</h3>
-            <p class="mb-6">Pour en savoir plus sur les formations en Allemagne, contactez un de nos responsables qui pourra vous aider à choisir le programme le plus adapté.</p>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">Contacter un responsable</button>
-        `;
-        modal.classList.remove('hidden');
-    };
-
-    document.getElementById('noBtn').onclick = function() {
-        modalContent.innerHTML = `
-            <h3 class="text-2xl font-bold mb-4">Pourquoi pas?</h3>
-            <p class="mb-6">Merci de nous indiquer pourquoi vous ne souhaitez pas faire des études en Allemagne.</p>
-            <form>
-                <textarea class="w-full p-2 border rounded-lg mb-4" rows="4" placeholder="Votre réponse"></textarea>
-                <button type="submit" class="bg-gray-500 text-white px-4 py-2 rounded-full hover:bg-gray-700">Envoyer</button>
-            </form>
-        `;
-        modal.classList.remove('hidden');
-    };
-
-    closeModal.onclick = function() {
-        modal.classList.add('hidden');
-    };
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.classList.add('hidden');
-        }
-    };
-
-</script>
-
-<script>
-    const images = document.querySelectorAll('.carousel-image');
-    let currentIndex = 0;
-
-    document.getElementById('nextBtn').onclick = function() {
-        images[currentIndex].classList.add('hidden');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.remove('hidden');
-    };
-
-    document.getElementById('prevBtn').onclick = function() {
-        images[currentIndex].classList.add('hidden');
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        images[currentIndex].classList.remove('hidden');
-    };
-</script>
-</body>
-</html>
