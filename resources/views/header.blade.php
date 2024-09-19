@@ -5,7 +5,7 @@
         <nav class="hidden md:flex space-x-4">
             <a href="#" class="text-yellow-400 hover:underline">Accueil</a>
             <a href="#" class="hover:underline hover:text-orange-500">Étude</a>
-            <a href="#" class="hover:underline hover:text-orange-500">Services</a>
+            <a href="{{url('/accueil/service/assistance')}}" class="hover:underline hover:text-orange-500">Services</a>
             <a href="#" class="hover:underline hover:text-orange-500">Bourse</a>
             <a href="#" class="hover:underline hover:text-orange-500">Carrière</a>
             <a href="{{url('/contact')}}" class="hover:underline hover:text-orange-500">Contact</a>
@@ -22,7 +22,7 @@
     <nav id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white space-y-2 p-4 fade-in-left">
         <a href="#" class="block text-yellow-400 hover:underline">Accueil</a>
         <a href="#" class="block hover:underline hover:text-orange-500">Étude</a>
-        <a href="#" class="block hover:underline hover:text-orange-500">Services</a>
+        <a href="/accueil/service/assistance" class="block hover:underline hover:text-orange-500">Services</a>
         <a href="#" class="block hover:underline hover:text-orange-500">Bourse</a>
         <a href="#" class="block hover:underline hover:text-orange-500">Carrière</a>
         <a href="{{url('/contact')}}" class="block hover:underline hover:text-orange-500">Contact</a>

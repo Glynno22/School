@@ -28,3 +28,6 @@ Route::get('/etude/allemagne', function () {
 Route::get('/etude', function () {
     return view('etude');
 });
+Route::get('/accueil/service/assistance', function () {
+    return view('service');
+});
