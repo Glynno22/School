@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('pays');
             $table->string('type');
             $table->string('image');
-            $table->integer('statut');
-            $table->string('slug');
+            $table->integer('statut')->default(0);
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }

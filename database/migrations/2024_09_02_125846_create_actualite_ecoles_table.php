@@ -14,14 +14,16 @@ return new class extends Migration
         Schema::create('actualite_ecoles', function (Blueprint $table) {
             $table->id();
             $table->string('nomEcole');
+            $table->unsignedBigInteger('Identifiant_expert');
             $table->string('description');
             $table->string('ville');
+            $table->string("titre_actu");
             $table->string('image');
             $table->string('lien');
             $table->string('pays');
             $table->string('type');
-            $table->integer('statut');
-            $table->string('slug');
+            $table->integer('statut')->default(0);
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }

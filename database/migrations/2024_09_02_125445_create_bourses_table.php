@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('bourses', function (Blueprint $table) {
             $table->id();
             $table->string('nomBourse');
+            $table->string("nom_univ");
             $table->string('description');
             $table->string('ville');
             $table->string('localisation');
@@ -21,8 +22,8 @@ return new class extends Migration
             $table->string('pays');
             $table->string('type');
             $table->string('image');
-            $table->integer('statut');
-            $table->string('slug');
+            $table->integer('statut')->default(0);
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }

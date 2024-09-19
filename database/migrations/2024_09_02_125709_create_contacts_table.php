@@ -14,13 +14,15 @@ return new class extends Migration
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('nomUser');
+            $table->unsignedBigInteger("Identifiant_expert")->nullable();
             $table->string('prenomUser');
             $table->string('description');
             $table->integer('telephone');
             $table->string('email');
-            $table->string('type');
-            $table->integer('statut');
-            $table->string('slug');
+            $table->string('type')->nullable();
+            $table->integer('statut')->default(0);
+            $table->string('slug')->nullable();
+            // $table->unsignedBigInteger("id_expert");
             $table->timestamps();
         });
     }
