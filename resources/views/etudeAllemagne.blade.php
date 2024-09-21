@@ -8,7 +8,7 @@
         <div class="bg-blue-800 bg-opacity-70 text-white py-20 px-6 text-center">
             <h1 class="text-4xl font-bold mb-4 slide-in">services offerts</h1>
             <p class="text-xl mb-8 ">Consultation Personnalisée</p>
-            <p class="text-lg ">Obtenez des conseils d'experts adaptés à votre situation unique pour faciliter votre processus d'immigration</p>
+            <p class="text-lg "> Obtenez des conseils d'experts adaptés à votre situation unique pour faciliter votre processus d'immigration</p>
         </div>
     </section>
 
