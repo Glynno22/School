@@ -1,23 +1,45 @@
-{{--<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'Accueil</title>
-    @vite('resources/css/app.css')
-    
-
-</head>
-
-<body class="font-sans antialiased fixed-x top-0 left-0 w-full bg-gray-100">
---}}
-   
 
 @extends('master')
 
 @section('content')
-
+<div id="carouselExampleIndicators" class="relative w-full" data-carousel="static">
+    <!-- Carousel indicators -->
+    <div class="absolute inset-x-0 bottom-0 flex justify-center p-4 space-x-3">
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Carousel items -->
+    <div class="relative overflow-hidden rounded-lg h-64">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="First slide">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="Second slide">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="Third slide">
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+</div>
+  
     <!-- Hero Section avec Carrousel -->
     <section class="relative bg-white">
         <div class="container mx-auto py-12 flex flex-col lg:flex-row items-center justify-between">
@@ -25,9 +47,9 @@
                 <!-- Carrousel -->
                 <div class="relative overflow-hidden">
                     <div id="carousel" class="relative w-full h-64">
-                        <img src="/mnt/data/Accueill.png" alt="Image 1" class="w-full h-full object-cover absolute inset-0">
-                        <img src="/mnt/data/Accueill.png" alt="Image 2" class="w-full h-full object-cover absolute inset-0 hidden">
-                        <img src="/mnt/data/Accueill.png" alt="Image 3" class="w-full h-full object-cover absolute inset-0 hidden">
+                        <img src="{{asset('img1.jpg')}}" alt="Image 1" class="w-full h-full object-cover absolute inset-0">
+                        <img src="{{asset('img2.jpg')}}" alt="Image 2" class="w-full h-full object-cover absolute inset-0 hidden">
+                        <img src="{{asset('img1.jpg')}}" alt="Image 3" class="w-full h-full object-cover absolute inset-0 hidden">
                     </div>
                     <!-- Navigation Carrousel -->
                     <div class="absolute inset-x-0 bottom-0 flex justify-center mb-4">
@@ -54,19 +76,19 @@
             <h2 class="text-3xl font-bold mb-6 text-blue-700">RESTEZ INFORMÉ EN TEMPS RÉEL AVEC NOTRE FLUX DE NOUVELLES</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="News Image 1" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="News Image 1" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
                     <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
                     <a href="#" class="text-blue-700 hover:underline">voir plus</a>
                 </div>
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="News Image 2" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="News Image 2" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
                     <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
                     <a href="#" class="text-blue-700 hover:underline">voir plus</a>
                 </div>
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="News Image 3" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="News Image 3" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
                     <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
                     <a href="#" class="text-blue-700 hover:underline">voir plus</a>
@@ -82,7 +104,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-9 items-center mx-2  ">
                 <div class="">
-                    <img src="/mnt/data/Accueill.png" alt="Image 3" class="w-full h-full object-cover">
+                    <img src="{{asset('img1.jpg')}}" alt="Image 3" class="w-full h-64  object-cover">
                 </div>
                 <div class="text-left ">
                     <h4 class="text-xl font-bold mb-4 text-white">Abonnez-vous à notre Newsletter!</h4>
@@ -103,17 +125,17 @@
             <h2 class="text-3xl font-bold mb-6 text-blue-700">Étudiants Satisfaits</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="Étudiant Satisfait 1" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 1" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Étudiant 1</h3>
                     <p class="text-gray-700">Chez [nom de l'entreprise], ils m'ont aidé à naviguer dans le processus complexe d'immigration...</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="Étudiant Satisfait 2" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 2" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Étudiant 2</h3>
                     <p class="text-gray-700">J'ai réussi à poursuivre mes études en Europe grâce à leurs précieux conseils...</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="/mnt/data/Accueill.png" alt="Étudiant Satisfait 3" class="w-full h-48 object-cover rounded">
+                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 3" class="w-full h-48 object-cover rounded">
                     <h3 class="text-lg font-bold mt-4">Étudiant 3</h3>
                     <p class="text-gray-700">Ils ont été là à chaque étape, me guidant et me soutenant tout au long de mon voyage...</p>
                 </div>
@@ -125,3 +147,31 @@
 
 
     @endsection
+
+    @session('script')
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+  const carouselItems = document.querySelectorAll('#carousel img');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    carouselItems.forEach((item, i) => {
+      item.classList.toggle('hidden', i !== index);
+    });
+  }
+
+  document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+    showSlide(currentIndex);
+  });
+
+  document.querySelector('[data-carousel-next]').addEventListener('click', () => {
+    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+    showSlide(currentIndex);
+  });
+
+  showSlide(currentIndex);
+});
+
+    </script>
+    @endsession
