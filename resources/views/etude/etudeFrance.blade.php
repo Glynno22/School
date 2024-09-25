@@ -7,24 +7,29 @@
 <!-- Hero Section -->
 <div class="container mx-auto mt-10 text-center slide-in">
     <h1 class="text-4xl font-bold text-blue-800">ETUDES</h1>
-    <p class="text-gray-600">ACCUEIL / ETUDE / ALLEMAGNE</p>
+    <p class="text-gray-600">ACCUEIL / ETUDE</p>
     <p class="text-xl mt-5">Pour préparer votre réussite, nous vous proposons des solutions d'immigration fiable.</p>
 </div>
 
 <!-- Pays Section -->
 
 <div class=" container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 gap-6  fade-in-left">
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/allemagne/universite')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">UNIVERSITÉS</p>
+            <p class="text-xl font-semibold">FORMATION INITIALE</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/allemagne/formation')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">FORMATION</p>
+            <p class="text-xl font-semibold">FORMATION ALTERNANCE</p>
         </div>
     </a>
-
+    <a href="{{url('/contact')}}">
+        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
+            <p class="text-xl font-semibold">AUTRE</p>
+        </div>
+    </a>
+    
 </div>
 
 <!-- Actualités Global Section -->

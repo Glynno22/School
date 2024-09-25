@@ -19,47 +19,32 @@
             <p class="text-xl font-semibold">ALLEMAGNE</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/france')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">FRANCE</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/belgique')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">BELGIQUE</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/canada')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">CANADA</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/etude/congo')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">CONGO</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne')}}">
+    <a href="{{url('/contact')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">AUTRES</p>
         </div>
     </a>
     
-    {{-- <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
-        <p class="text-xl font-semibold">FRANCE</p>
-    </div>
-    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
-        <p class="text-xl font-semibold">BELGIQUE</p>
-    </div>
-    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
-        <p class="text-xl font-semibold">CANADA</p>
-    </div>
-    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
-        <p class="text-xl font-semibold">CONGO</p>
-    </div>
-    <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg fade-in">
-        <p class="text-xl font-semibold">AUTRES</p>
-    </div> --}}
 </div>
 
 <!-- Actualités Global Section -->
