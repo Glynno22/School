@@ -14,12 +14,12 @@
 <!-- Pays Section -->
 
 <div class=" container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 gap-6  fade-in-left">
-    <a href="{{url('/etude/allemagne/universite')}}">
+    <a href="{{url('/etude/france/formationInitiale')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">FORMATION INITIALE</p>
         </div>
     </a>
-    <a href="{{url('/etude/allemagne/formation')}}">
+    <a href="{{url('/etude/france/formationAlternance')}}">
         <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
             <p class="text-xl font-semibold">FORMATION ALTERNANCE</p>
         </div>

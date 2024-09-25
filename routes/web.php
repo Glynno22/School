@@ -34,10 +34,10 @@ Route::get('/accueil/service/assistance', function () {
 });
 
 Route::get('/etude/allemagne/formation', function () {
-    return view('etudes.etudeAllemagneFormation');
+    return view('etude.etudeAllemagneFormation');
 });
-Route::get('/etude/allemagne/Universite', function () {
-    return view('etudes.etudeAllemagneUniversite');
+Route::get('/etude/allemagne/universite', function () {
+    return view('etude.etudeAllemagneUniversite');
 });
 
 Route::get('/etude/france', function () {
@@ -45,10 +45,10 @@ Route::get('/etude/france', function () {
 });
 
 Route::get('/etude/france/formationInitiale', function () {
-    return view('etudes.etude/france/formationInitiale');
+    return view('etude.etudeFranceFormationInitiale');
 });
 Route::get('/etude/france/formationAlternance', function () {
-    return view('etudes.etudeFranceAlternance');
+    return view('etude.etudeFranceAlternance');
 });
 Route::get('/etude/belgique', function () {
     return view('etude.etudeBelgique');
