@@ -1,7 +1,11 @@
  <!-- Header avec Hamburger Menu -->
  <header class="bg-blue-700 text-white ">
     <div class="container mx-auto flex justify-between items-center py-4">
-        <div class="text-2xl font-bold"> WilTravel </div>
+        <a href="{{url('/')}}" class="mb-6">
+            <img src="{{asset('logo.svg')}}" alt="logo" width="40" height="40">
+        </a>
+       
+        
         <nav class="hidden md:flex space-x-4">
             <a href="{{ url('/') }}" class="{{ Request::is('/') ? 'text-yellow-400' : 'hover:text-orange-500 hover:underline' }}">Accueil</a>
             <a href="{{ url('/etude') }}" class="{{ Request::is('etude') ? 'text-yellow-400' : 'hover:text-orange-500 hover:underline' }}">Étude</a>
