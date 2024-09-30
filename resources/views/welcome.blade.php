@@ -2,43 +2,53 @@
 @extends('master')
 
 @section('content')
-<div id="carouselExampleIndicators" class="relative w-full" data-carousel="static">
-    <!-- Carousel indicators -->
-    <div class="absolute inset-x-0 bottom-0 flex justify-center p-4 space-x-3">
-      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-gray-800" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+<div class="w-full">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- Carousel Inner -->
+        <div class="carousel-inner h-full">
+            <div class="carousel-item active">
+                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
+                <div class="carousel-caption d-flex flex-col justify-center h-full ">
+                    <h5 class="self-center">First slide label</h5>
+                    <p class="self-center">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
+                <div class="carousel-caption d-flex flex-col justify-center h-full ">
+                    <h5 class="self-center">First slide label</h5>
+                    <p class="self-center">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
+                <div class="carousel-caption d-flex flex-col justify-center h-full ">
+                    <h5 class="self-center">First slide label</h5>
+                    <p class="self-center">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!-- Carousel items -->
-    <div class="relative overflow-hidden rounded-lg h-64">
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="First slide">
-      </div>
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="Second slide">
-      </div>
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="{{asset('img1.jpg')}}" class="block w-full h-full object-cover" alt="Third slide">
-      </div>
-    </div>
-    <!-- Carousel controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-        <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-        </svg>
-        <span class="sr-only">Previous</span>
-      </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-        <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-        <span class="sr-only">Next</span>
-      </span>
-    </button>
 </div>
+
+
   
     <!-- Hero Section avec Carrousel -->
     <section class="relative bg-white">
@@ -95,10 +105,10 @@
                 </div>
             </div>
         </div>
-    {{--</section>
+   
 
     <!-- Newsletter Section -->
-    <section class="bg-[rgb(119,162,200)] mx-2 text-white py-12 fade-in-right">--}}
+    <section class="bg-[rgb(119,162,200)] mx-2 text-white py-12 fade-in-right">
         <div class="container mx-auto text-center fade-in-right ">
             <h2 class="text-3xl font-bold mb-4 text-blue-700">Newsletter</h2>
             
@@ -143,35 +153,33 @@
         </div>
     </section>
 
-
-
-
     @endsection
 
-    @session('script')
-    <script>
-       document.addEventListener('DOMContentLoaded', function () {
-  const carouselItems = document.querySelectorAll('#carousel img');
-  let currentIndex = 0;
+    @section('scripts')
+        <script>
+           document.addEventListener('DOMContentLoaded', function () {
+        const carouselItems = document.querySelectorAll('#carouselAuto .carousel-item');
+        let currentIndex = 0;
+        const totalItems = carouselItems.length;
+        const intervalTime = 3000; // Temps d'intervalle en millisecondes (3 secondes)
 
-  function showSlide(index) {
-    carouselItems.forEach((item, i) => {
-      item.classList.toggle('hidden', i !== index);
+        function showSlide(index) {
+            carouselItems.forEach((item, i) => {
+                item.classList.toggle('hidden', i !== index);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+        }
+
+        // Défilement automatique du carrousel
+        setInterval(nextSlide, intervalTime);
+
+        // Initialiser le carrousel avec la première image
+        showSlide(currentIndex);
     });
-  }
-
-  document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
-    showSlide(currentIndex);
-  });
-
-  document.querySelector('[data-carousel-next]').addEventListener('click', () => {
-    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
-    showSlide(currentIndex);
-  });
-
-  showSlide(currentIndex);
-});
-
-    </script>
-    @endsession
+        </script>
+@endsection
+     

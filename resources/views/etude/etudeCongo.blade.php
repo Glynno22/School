@@ -4,13 +4,11 @@
 
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center slide-in" style="background-image: url({{asset('img1.jpg')}});">
-        <div class="bg-blue-800 bg-opacity-70 text-white py-20 px-6 text-center">
-            <h1 class="text-4xl font-bold mb-4 slide-in">services offerts</h1>
-            <p class="text-xl mb-8 ">Consultation Personnalisée</p>
-            <p class="text-lg "> Obtenez des conseils d'experts adaptés à votre situation unique pour faciliter votre processus d'immigration</p>
-        </div>
-    </section>
+    <div class="container mx-auto mt-10 text-center slide-in">
+        <h1 class="text-4xl font-bold text-blue-800">ETUDES</h1>
+        <p class="text-gray-600">ACCUEIL / ETUDE / ALLEMAGNE</p>
+        <p class="text-xl mt-5">Pour préparer votre réussite, nous vous proposons des solutions d'immigration fiable.</p>
+    </div>
 
     <!-- Universities Section -->
    <!-- Universities Section -->

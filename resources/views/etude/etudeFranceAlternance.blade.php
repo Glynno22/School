@@ -15,7 +15,7 @@
     <!-- Universities Section -->
    <!-- Universities Section -->
     <section class="container mx-auto py-12">
-        <h2 class="text-3xl font-bold text-center mb-8">NOS UNIVERSITÉS</h2>
+        <h2 class="text-3xl font-bold text-center mb-8">NOS UNIVERSITÉS EN ALTERNANCE</h2>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 fade-in-left">
             <!-- University Carousel -->
             <div id="carouselExample" class="relative">
