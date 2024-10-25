@@ -29,6 +29,24 @@ Route::get('/etude/allemagne', function () {
 Route::get('/etude', function () {
     return view('etude');
 });
+
+Route::get('/assistance', function () {
+    return view('espert');
+});
+
+Route::get('/temoignage', function () {
+    return view('temoignage');
+});
+
+
+// Route::get('/event-a-venir', function () {
+//     return view('a-venir');
+// });
+
+Route::get('/about', function () {
+    return view('apropos');
+});
+
 Route::get('/accueil/service/assistance', function () {
     return view('service');
 });
