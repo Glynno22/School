@@ -3,91 +3,240 @@
 
 @section('content')
 
-    
-<!-- Hero Section -->
-<div class="container mx-auto mt-10 text-center slide-in">
-    <h1 class="text-4xl font-bold text-blue-800">ETUDES</h1>
-    <p class="text-gray-600">ACCUEIL / ETUDE</p>
-    <p class="text-xl mt-5">Pour préparer votre réussite, nous vous proposons des solutions d'immigration fiable.</p>
+   <!-- Header Start -->
+   <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Countries Offer</h1>
+        <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+            <li class="breadcrumb-item active text-secondary">Countries</li>
+        </ol>    
+    </div>
 </div>
+<!-- Header End -->
 
-<!-- Pays Section -->
-
-<div class=" container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 gap-6  fade-in-left">
-    <a href="{{url('/etude/allemagne')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">ALLEMAGNE</p>
+<!-- Countries We Offer Start -->
+<div class="container-fluid country overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
+            </div>
+            <h1 class="display-5 mb-4">Immigration & visa services following Countries</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
         </div>
-    </a>
-    <a href="{{url('/etude/france')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">FRANCE</p>
-        </div>
-    </a>
-    <a href="{{url('/etude/belgique')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">BELGIQUE</p>
-        </div>
-    </a>
-    <a href="{{url('/etude/canada')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">CANADA</p>
-        </div>
-    </a>
-    <a href="{{url('/etude/congo')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">CONGO</p>
-        </div>
-    </a>
-    <a href="{{url('/contact')}}">
-        <div class="text-center bg-gray-200 py-6 rounded-lg shadow-md hover:shadow-lg">
-            <p class="text-xl font-semibold">AUTRES</p>
-        </div>
-    </a>
-    
-</div>
-
-<!-- Actualités Global Section -->
-<div class="container mx-auto mt-10">
-    <h2 class="text-2xl font-bold text-center text-blue-800 mb-8 slide-in">ACTUALITES GLOBAL (ETUDE)</h2>
-
-    <!-- Carrousel -->
-    <div class="relative w-full overflow-hidden fade-in-left">
-        <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-            <!-- First Slide -->
-            <div class="w-full flex-shrink-0">
-                <div class="flex">
-                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
-                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+        <div class="row g-4 text-center">
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/brazil.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Brazil</a>
+                    </div>
                 </div>
             </div>
-            <!-- Second Slide -->
-            <div class="w-full flex-shrink-0">
-                <div class="flex">
-                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
-                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">india</a>
+                    </div>
                 </div>
             </div>
-            <!-- Third Slide -->
-            <div class="w-full flex-shrink-0">
-                <div class="flex">
-                    <img src="{{asset('img1.jpg')}}" alt="Saint Louis University" class=" w-2/5 h-28" >
-                    <p class="text-center mt-2">Saint Louis University - Demande d'admission pour 2025.</p>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/usa.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">New York</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/italy.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Italy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Countries</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Countries We Offer End -->
+
+<!-- Counter Facts Start -->
+<div class="container-fluid counter-facts overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Visa Categories</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">31</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Team Members</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">377</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Visa Process</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">4.9</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Success Rates</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">98</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- Counter Facts End -->
 
-    <!-- Pagination / Navigation -->
-    <div class="flex justify-center space-x-3 mt-4">
-        <button class="w-3 h-3 rounded-full bg-blue-600 pagination button" onclick="moveCarousel(0)"></button>
-        <button class="w-3 h-3 rounded-full bg-gray-400 pagination button" onclick="moveCarousel(1)"></button>
-        <button class="w-3 h-3 rounded-full bg-gray-400 pagination button" onclick="moveCarousel(2)"></button>
+
+<!-- Training Start -->
+<div class="container-fluid training overflow-hidden bg-light py-5">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">CHECK OUR TRAINING</h5>
+            </div>
+            <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Travisa</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">IELTS</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">IELTS Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">TOEFL</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">TOEFL Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">PTE</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">PTE Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">OET</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">OET Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">View More</a>
+            </div>
+        </div>
     </div>
 </div>
-
-<!-- JS for Carousel -->
+<!-- Training End -->
 
 
 @endsection
+
 

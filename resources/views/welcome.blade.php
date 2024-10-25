@@ -2,184 +2,742 @@
 @extends('master')
 
 @section('content')
-<div class="w-full">
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!-- Carousel Start -->
+  <div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="text-center p-4" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Immigration Process Starts Here!</h1>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="text-center p-4" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
+                        <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <!-- Carousel Inner -->
-        <div class="carousel-inner h-full">
-            <div class="carousel-item active">
-                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
-                <div class="carousel-caption d-flex flex-col justify-center h-full ">
-                    <h5 class="self-center">First slide label</h5>
-                    <p class="self-center">Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item active">
-                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
-                <div class="carousel-caption d-flex flex-col justify-center h-full ">
-                    <h5 class="self-center">First slide label</h5>
-                    <p class="self-center">Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item active">
-                <img src="{{asset('img1.jpg')}}" class="d-block w-full object-cover h-[500px]" alt="First slide" height="">
-                <div class="carousel-caption d-flex flex-col justify-center h-full ">
-                    <h5 class="self-center">First slide label</h5>
-                    <p class="self-center">Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false"></span>
+            <span class="visually-hidden-focusable">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false"></span>
+            <span class="visually-hidden-focusable">Next</span>
         </button>
     </div>
 </div>
+<!-- Carousel End -->
 
 
-  
-    <!-- Hero Section avec Carrousel -->
-    <section class="relative bg-white">
-        <div class="container mx-auto py-12 flex flex-col lg:flex-row items-center justify-between">
-            <div class="w-full lg:w-1/2 p-6 fade-in-left relative">
-                <!-- Carrousel -->
-                <div class="relative overflow-hidden">
-                    <div id="carousel" class="relative w-full h-64">
-                        <img src="{{asset('img1.jpg')}}" alt="Image 1" class="w-full h-full object-cover absolute inset-0">
-                        <img src="{{asset('img2.jpg')}}" alt="Image 2" class="w-full h-full object-cover absolute inset-0 hidden">
-                        <img src="{{asset('img1.jpg')}}" alt="Image 3" class="w-full h-full object-cover absolute inset-0 hidden">
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto d-flex">
+                    <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="bg-light rounded">
+                    <img src="img/about-2.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
+                    <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                </div>
+            </div>
+            <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                <h5 class="sub-title pe-3">About the company</h5>
+                <h1 class="display-5 mb-4">We’re Trusted Immigration Consultant Agency.</h1>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe! Sequi asperiores rerum nemo!</p>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-12 col-sm-6 d-flex align-items-center">
+                        <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
+                        <h5 class="ms-4">Best Immigration Resources</h5>
                     </div>
-                    <!-- Navigation Carrousel -->
-                    <div class="absolute inset-x-0 bottom-0 flex justify-center mb-4">
-                        <button class="carousel-dot mx-1 bg-white w-3 h-3 rounded-full"></button>
-                        <button class="carousel-dot mx-1 bg-gray-500 w-3 h-3 rounded-full"></button>
-                        <button class="carousel-dot mx-1 bg-gray-500 w-3 h-3 rounded-full"></button>
+                    <div class="col-12 col-sm-6 d-flex align-items-center">
+                        <i class="fas fa-passport fa-3x text-secondary"></i>
+                        <h5 class="ms-4">Return Visas Availabile</h5>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <div class="bg-light text-center rounded p-3">
+                            <div class="mb-2">
+                                <i class="fas fa-ticket-alt fa-4x text-primary"></i>
+                            </div>
+                            <h1 class="display-5 fw-bold mb-2">34</h1>
+                            <p class="text-muted mb-0">Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-9">
+                        <div class="mb-5">
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offer 100 % Genuine Assistance</p>
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> It’s Faster & Reliable Execution</p>
+                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Accurate & Expert Advice</p>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                                <a href="" class="position-relative wow tada" data-wow-delay=".9s">
+                                    <i class="fa fa-phone-alt text-primary fa-3x"></i>
+                                    <div class="position-absolute" style="top: 0; left: 25px;">
+                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <span class="text-primary">Have any questions?</span>
+                                <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +0123 456 7890</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 p-6 fade-in-right">
-                <h2 class="text-3xl font-bold text-blue-700">VOTRE VOYAGE VERS DE NOUVELLES OPPORTUNITÉS COMMENCE ICI</h2>
-                <p class="mt-4 text-gray-700">
-                    Chez [nom de l'entreprise], nous facilitons votre transition de l'Afrique vers l'Europe en vous offrant des solutions d'immigration personnalisées de toutes natures. Notre objectif est de vous accompagner à chaque étape de votre parcours, en vous fournissant les informations et le soutien nécessaires pour réaliser vos rêves et bâtir un avenir meilleur, tout en vous ouvrant les portes de nouvelles opportunités.
-                </p>
-            </div>
         </div>
-    </section>
+    </div>
+</div>
+<!-- About End -->
 
-    
 
-    <!-- Nouvelles Section -->
-    <section class="bg-[#77A2C8] py-12 mx-4 space-y-5 ">
-        <div class="container mx-auto text-center fade-in-left">
-            <h2 class="text-3xl font-bold mb-6 text-blue-700">RESTEZ INFORMÉ EN TEMPS RÉEL AVEC NOTRE FLUX DE NOUVELLES</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="News Image 1" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
-                    <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
-                    <a href="#" class="text-blue-700 hover:underline">voir plus</a>
-                </div>
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="News Image 2" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
-                    <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
-                    <a href="#" class="text-blue-700 hover:underline">voir plus</a>
-                </div>
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="News Image 3" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Université de Paris Sorbonne</h3>
-                    <p class="text-gray-700">Lieu de départ pour les étudiants africains...</p>
-                    <a href="#" class="text-blue-700 hover:underline">voir plus</a>
+<!-- Counter Facts Start -->
+<div class="container-fluid counter-facts py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Visa Categories</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">31</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-   
-
-    <!-- Newsletter Section -->
-    <section class="bg-[rgb(119,162,200)] mx-2 text-white py-12 fade-in-right">
-        <div class="container mx-auto text-center fade-in-right ">
-            <h2 class="text-3xl font-bold mb-4 text-blue-700">Newsletter</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-9 items-center mx-2  ">
-                <div class="">
-                    <img src="{{asset('img1.jpg')}}" alt="Image 3" class="w-full h-64  object-cover">
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Team Members</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">377</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-left ">
-                    <h4 class="text-xl font-bold mb-4 text-white">Abonnez-vous à notre Newsletter!</h4>
-                    <p class="text-white">Recevez les dernières nouvelles et opportunités directement dans votre boîte de réception. Inscrivez-vous maintenant pour ne rien manquer</p>
-                    <form class="flex justify-start items-center">
-                        <input type="email" placeholder="tchofo@gmail.com" class="text-gray-800 p-3 rounded-l w-full max-w-lg ">
-                        <button class="bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-r hover:bg-yellow-300 transition duration-300">Envoyer</button>
-                    </form>
-                </div>
-                
             </div>
-        </div>
-    </section>
-
-    <!-- Étudiants Satisfaits -->
-    <section class="py-12 bg-gray-100">
-        <div class="container mx-auto text-center fade-in-left">
-            <h2 class="text-3xl font-bold mb-6 text-blue-700">Étudiants Satisfaits</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 1" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Étudiant 1</h3>
-                    <p class="text-gray-700">Chez [nom de l'entreprise], ils m'ont aidé à naviguer dans le processus complexe d'immigration...</p>
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Visa Process</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">4.9</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 2" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Étudiant 2</h3>
-                    <p class="text-gray-700">J'ai réussi à poursuivre mes études en Europe grâce à leurs précieux conseils...</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow-lg">
-                    <img src="{{asset('img1.jpg')}}" alt="Étudiant Satisfait 3" class="w-full h-48 object-cover rounded">
-                    <h3 class="text-lg font-bold mt-4">Étudiant 3</h3>
-                    <p class="text-gray-700">Ils ont été là à chaque étape, me guidant et me soutenant tout au long de mon voyage...</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="counter-content">
+                        <h3>Success Rates</h3>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="counter-value" data-toggle="counter-up">98</span>
+                            <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<!-- Counter Facts End -->
 
-    @endsection
 
-    @section('scripts')
-        <script>
-           document.addEventListener('DOMContentLoaded', function () {
-        const carouselItems = document.querySelectorAll('#carouselAuto .carousel-item');
-        let currentIndex = 0;
-        const totalItems = carouselItems.length;
-        const intervalTime = 3000; // Temps d'intervalle en millisecondes (3 secondes)
+<!-- Services Start -->
+<div class="container-fluid service overflow-hidden pt-5">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">Visa Categories</h5>
+            </div>
+            <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Job Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Job Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Business Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Business Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Diplometic Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Diplometic Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Students Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Students Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Residence Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Residence Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Tourist Visa</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="#"><h4 class="text-white mb-4 py-3">Tourist Visa</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
 
-        function showSlide(index) {
-            carouselItems.forEach((item, i) => {
-                item.classList.toggle('hidden', i !== index);
-            });
-        }
 
-        function nextSlide() {
-            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
-            showSlide(currentIndex);
-        }
 
-        // Défilement automatique du carrousel
-        setInterval(nextSlide, intervalTime);
+<!-- Features Start -->
+<div class="container-fluid features overflow-hidden py-5">
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">Why Choose Us</h5>
+            </div>
+            <h1 class="display-5 mb-4">Offer Tailor Made Services That Our Client Requires</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="row g-4 justify-content-center text-center">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="feature-item text-center p-4">
+                    <div class="feature-icon p-3 mb-4">
+                        <i class="fas fa-dollar-sign fa-4x text-primary"></i>
+                    </div>
+                    <div class="feature-content d-flex flex-column">
+                        <h5 class="mb-3">Cost-Effective</h5>
+                        <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                        <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="feature-item text-center p-4">
+                    <div class="feature-icon p-3 mb-4">
+                        <i class="fab fa-cc-visa fa-4x text-primary"></i>
+                    </div>
+                    <div class="feature-content d-flex flex-column">
+                        <h5 class="mb-3">Visa Assistance</h5>
+                        <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                        <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item text-center p-4">
+                    <div class="feature-icon p-3 mb-4">
+                        <i class="fas fa-atlas fa-4x text-primary"></i>
+                    </div>
+                    <div class="feature-content d-flex flex-column">
+                        <h5 class="mb-3">Faster Processing</h5>
+                        <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                        <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="feature-item text-center p-4">
+                    <div class="feature-icon p-3 mb-4">
+                        <i class="fas fa-users fa-4x text-primary"></i>
+                    </div>
+                    <div class="feature-content d-flex flex-column">
+                        <h5 class="mb-3">Direct Interviews</h5>
+                        <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                        <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Features</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
 
-        // Initialiser le carrousel avec la première image
-        showSlide(currentIndex);
-    });
-        </script>
+
+
+<!-- Countries We Offer Start -->
+<div class="container-fluid country overflow-hidden py-5">
+    <div class="container">
+        <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
+            </div>
+            <h1 class="display-5 mb-4">Immigration & visa services following Countries</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="row g-4 text-center">
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/brazil.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Brazil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">india</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/usa.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">New York</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="img/country-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="img/italy.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Italy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Countries</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Countries We Offer End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial overflow-hidden pb-5">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">OUR CLIENTS RIVIEWS</h5>
+            </div>
+            <h1 class="display-5 mb-4">What Our Clients Say</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
+            <div class="testimonial-item">
+                <div class="testimonial-content p-4 mb-5">
+                    <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                    </p>
+                    <div class="d-flex justify-content-end">
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="img">
+                    </div>
+                    <div class="my-auto">
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-content p-4 mb-5">
+                    <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                    </p>
+                    <div class="d-flex justify-content-end">
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="img">
+                    </div>
+                    <div class="my-auto">
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-content p-4 mb-5">
+                    <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.
+                    </p>
+                    <div class="d-flex justify-content-end">
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                        <i class="fas fa-star text-secondary"></i>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" alt="img">
+                    </div>
+                    <div class="my-auto">
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+<!-- Training Start -->
+<div class="container-fluid training overflow-hidden bg-light py-5">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">CHECK OUR TRAINING</h5>
+            </div>
+            <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Travisa</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">IELTS</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">IELTS Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">TOEFL</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">TOEFL Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">PTE</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">PTE Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="training-item">
+                    <div class="training-inner">
+                        <img src="img/training-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="training-title-name">
+                            <a href="#" class="h4 text-white mb-0">OET</a>
+                            <a href="#" class="h4 text-white mb-0">Coaching</a>
+                        </div>
+                    </div>
+                    <div class="training-content bg-secondary rounded-bottom p-4">
+                        <a href="#"><h4 class="text-white">OET Coaching</h4></a>
+                        <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                        <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">View More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Training End -->
+
+
+<!-- Contact Start -->
+<div class="container-fluid contact overflow-hidden pb-5">
+    <div class="container py-5">
+        <div class="office pt-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">Worlwide Offices</h5>
+                </div>
+                <h1 class="display-5 mb-4">Explore Our Office Worldwide</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">Australia</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">Canada</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">United Kingdom</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">India</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+
 @endsection
      

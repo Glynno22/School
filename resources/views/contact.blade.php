@@ -1,95 +1,206 @@
 @extends('master')
 
 @section('content')
+ <!-- Header Start -->
+ <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h1>
+        <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+            <li class="breadcrumb-item active text-secondary">Contact</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
 
-    <!-- Contact Section -->
-    <section class="container mx-auto p-8">
-        <h1 class="text-3xl font-bold text-center text-blue-900 mb-4">NOUS SOMMES HEUREUX DE VOUS ENTENDRE !</h1>
-        <p class="text-center text-gray-700 mb-8">
-            Chez Newlester, nous croyons que chaque question et chaque commentaire compte. Nous sommes là pour vous écouter et vous aider avec le plus grand soin. Que vous ayez des questions, des suggestions ou simplement l'envie de nous faire part de vos impressions, n'hésitez pas à nous contacter. Votre avis est précieux pour nous, et nous nous engageons à vous répondre dans les plus brefs délais.
-        </p>
-        <form class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Nom <span class="text-orange-500">*</span></label>
-                    <input type="text" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+ <!-- Contact Start -->
+ <div class="container-fluid contact overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3">Quick Contact</h5>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Prénom <span class="text-orange-500">*</span></label>
-                    <input type="text" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                <h1 class="display-5 mb-4">Have Questions? Don't Hesitate to Contact Us</h1>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam deserunt tempora. Tempore neque necessitatibus corporis error earum sint quae?</p>
+                <div class="d-flex border-bottom mb-4 pb-4">
+                    <i class="fas fa-map-marked-alt fa-4x text-primary bg-light p-3 rounded"></i>
+                    <div class="ps-3">
+                        <h5>Location</h5>
+                        <p>123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-xl-6">
+                        <div class="d-flex">
+                            <i class="fas fa-tty fa-3x text-primary"></i>
+                            <div class="ps-3">
+                                <h5 class="mb-3">Quick Contact</h5>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Phone:</h6>
+                                    <a href="#" class="fs-5 text-primary">+012 3456 7890</a>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Email:</h6>
+                                    <a href="#" class="fs-5 text-primary">travisa@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="d-flex">
+                            <i class="fas fa-clone fa-3x text-primary"></i>
+                            <div class="ps-3">
+                                <h5 class="mb-3">Opening Hrs</h5>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Mon - Friday:</h6>
+                                    <a href="#" class="fs-5 text-primary">09.00 am to 07.00 pm</a>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Satday:</h6>
+                                    <a href="#" class="fs-5 text-primary">10.00 am to 05.00 pm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center pt-3">
+                    <div class="me-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 10px;"><i class="fas fa-share fa-3x text-primary"></i></div>
+                    </div>
+                    <div class="d-flex">
+                        <a class="btn btn-secondary border-secondary me-2 p-0" href="">facebook <i class="fas fa-chevron-circle-right"></i></a>
+                        <a class="btn btn-secondary border-secondary mx-2 p-0" href="">twitter <i class="fas fa-chevron-circle-right"></i></a>
+                        <a class="btn btn-secondary border-secondary mx-2 p-0" href="">instagram <i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Email <span class="text-orange-500">*</span></label>
-                <input type="email" required
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-            </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Téléphone <span class="text-orange-500">*</span></label>
-                <input type="tel" required
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-            </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Comment pouvons-nous vous aider ? <span class="text-orange-500">*</span></label>
-                <textarea required
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm h-32"></textarea>
-            </div>
-            <div class="flex items-center mb-4">
-                <input id="accept-terms" type="checkbox" required
-                    class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                <label for="accept-terms" class="ml-2 block text-sm text-gray-700">J'accepte la <a href="#" class="text-orange-500">politique de confidentialité</a></label>
-            </div>
-            <div>
-                <button type="submit"
-                    class="w-full bg-orange-500 text-white py-2 px-4 rounded-md shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
-                    Soumettre
-                </button>
-            </div>
-        </form>
-    </section>
-
-    <section class="container mx-auto p-8 text-center">
-        <h2 class="text-2xl font-bold text-blue-900 mb-6">Souhaitez-vous un contact direct ?</h2>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div class="max-w-xs md:w-1/4">
-                <img src="https://via.placeholder.com/150" alt="Brayan catherine"
-                    class="rounded-full mx-auto mb-4 transition-transform transform hover:scale-105">
-                <h3 class="text-lg font-bold">Brayan catherine</h3>
-                <p class="text-blue-500">consultant</p>
-                <p class="text-gray-700"><a href="mailto:brayan@gmail.com">brayan@gmail.com</a></p>
-                <p class="text-gray-700">+33 457 327 823</p>
-            </div>
-            <div class="max-w-xs md:w-1/4">
-                <img src="https://via.placeholder.com/150" alt="Heste catherine"
-                    class="rounded-full mx-auto mb-4 transition-transform transform hover:scale-105">
-                <h3 class="text-lg font-bold">Heste catherine</h3>
-                <p class="text-blue-500">consultante</p>
-                <p class="text-gray-700"><a href="mailto:heste@gmail.com">heste@gmail.com</a></p>
-                <p class="text-gray-700">+33 457 327 823</p>
-            </div>
-            <div class="max-w-xs md:w-1/4">
-                <img src="https://via.placeholder.com/150" alt="Donald catherine"
-                    class="rounded-full mx-auto mb-4 transition-transform transform hover:scale-105">
-                <h3 class="text-lg font-bold">Donald catherine</h3>
-                <p class="text-blue-500">consultant</p>
-                <p class="text-gray-700"><a href="mailto:donald@gmail.com">donald@gmail.com</a></p>
-                <p class="text-gray-700">+33 457 327 823</p>
-            </div>
-
-            <div class="max-w-xs md:w-1/4 ">
-                <img src="https://via.placeholder.com/150" alt="Donald catherine"
-                    class="rounded-full mx-auto mb-4 transition-transform transform hover:scale-105">
-                <h3 class="text-lg font-bold">Donald catherine</h3>
-                <p class="text-blue-500">consultant</p>
-                <p class="text-gray-700"><a href="mailto:donald@gmail.com">donald@gmail.com</a></p>
-                <p class="text-gray-700">+33 457 327 823</p>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3">Let’s Connect</h5>
+                </div>
+                <h1 class="display-5 mb-4">Send Your Message</h1>
+                <p class="mb-3">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                <form>
+                    <div class="row g-4">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                                <label for="phone">Your Phone</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="project" placeholder="Project">
+                                <label for="project">Your Project</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3">Send Message</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+        <div class="office pt-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">Worlwide Offices</h5>
+                </div>
+                <h1 class="display-5 mb-4">Explore Our Office Worldwide</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">Australia</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">Canada</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">United Kingdom</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">India</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-5 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="rounded h-100">
+                        <iframe class="rounded w-100" 
+                        style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
 
 
-
-    @endsection
+@endsection
     
