@@ -14,10 +14,8 @@
                 <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="text-center p-4" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h4>
-                        <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Immigration Process Starts Here!</h1>
-                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        </p>
+                        <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Explorez le monde et ces horizons</h1>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting accompagne les étudiants dans leurs projets de voyage à l’international, que ce soit pour des études, des stages ou des échanges culturels. Forts de notre expertise et de notre passion pour l’exploration, nous nous engageons à rendre votre expérience de voyage enrichissante, fluide et mémorable. </p>
                         {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
                     </div>
                 </div>
@@ -26,14 +24,26 @@
                 <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="text-center p-4" style="max-width: 900px;">
-                        <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
-                        <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
-                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        <h2 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Réaliser votre rêves de vivre et de travailler a l'étranger</h2>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting est spécialisée dans les services de visa pour étudiants, facilitant les démarches d’immigration pour des études, des stages, ou des échanges culturels à l’étranger. Nous offrons un accompagnement personnalisé, adapté aux besoins et aux objectifs de chaque étudiant, pour assurer un processus de demande de visa efficace et sans stress.
                         </p>
                         {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
                     </div>
                 </div>
             </div>
+
+            <div class="carousel-item">
+                <img src="img/carousel3.jpg" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="text-center p-4" style="max-width: 900px;">
+                        <h2 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Laisser nous vous guider a chaque etape du processus</h2>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting vous offrons un accompagnement personnalisé, adapté aux besoins et aux objectifs de chaque étudiant, pour assurer un processus de demande de visa efficace et sans stress.
+                        </p>
+                        {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
+                    </div>
+                </div>
+            </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false"></span>
@@ -43,6 +53,7 @@
             <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false"></span>
             <span class="visually-hidden-focusable">Next</span>
         </button>
+       
     </div>
 </div>
 <!-- Carousel End -->
@@ -80,18 +91,11 @@
                 </div>
             </div>
             <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                <h5 class="sub-title pe-3">About the company</h5>
-                <h1 class="display-5 mb-4">We’re Trusted Immigration Consultant Agency.</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe! Sequi asperiores rerum nemo!</p>
+                <h5 class="sub-title pe-3">À propos de l'entreprise</h5>
+                <h1 class="display-5 mb-4">Nous sommes une agence de conseil en immigration de confiance.</h1>
+                <p class="mb-4">Chez WillTravel Consulting, nous nous engageons à offrir des solutions d'immigration sur mesure pour les étudiants souhaitant étudier à l'étranger. Avec une équipe d'experts passionnés et expérimentés, nous garantissons un accompagnement personnalisé à chaque étape du processus, du choix de la destination à l'obtention du visa. Notre objectif est de rendre vos rêves d'études à l'international accessibles et réalisables, tout en vous offrant un service transparent et de qualité. Faites confiance à notre expertise pour transformer votre projet en réalité !</p>
                 <div class="row gy-4 align-items-center">
-                    <div class="col-12 col-sm-6 d-flex align-items-center">
-                        <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
-                        <h5 class="ms-4">Best Immigration Resources</h5>
-                    </div>
-                    <div class="col-12 col-sm-6 d-flex align-items-center">
-                        <i class="fas fa-passport fa-3x text-secondary"></i>
-                        <h5 class="ms-4">Return Visas Availabile</h5>
-                    </div>
+                   
                     <div class="col-4 col-md-3">
                         <div class="bg-light text-center rounded p-3">
                             <div class="mb-2">
