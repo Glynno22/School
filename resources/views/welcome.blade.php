@@ -8,6 +8,7 @@
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -86,8 +87,8 @@
         <div class="row g-5">
             <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="bg-light rounded">
-                    <img src="img/about-2.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
-                    <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                    <img src="img/about1.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image" height="500" width="500">
+                    {{-- <img src="img/about-2.png" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image" height="300" width="300"> --}}
                 </div>
             </div>
             <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
@@ -99,17 +100,24 @@
                     <div class="col-4 col-md-3">
                         <div class="bg-light text-center rounded p-3">
                             <div class="mb-2">
-                                <i class="fas fa-ticket-alt fa-4x text-primary"></i>
+                                <i class="fa-solid fa-circle-check fa-4x text-primary"></i>
+                                
                             </div>
-                            <h1 class="display-5 fw-bold mb-2">34</h1>
-                            <p class="text-muted mb-0">Years of Experience</p>
+                            <h1 class="display-5 fw-bold mb-2">04</h1>
+                            <p class="text-muted mb-0">anneé d'expérience</p>
                         </div>
                     </div>
                     <div class="col-8 col-md-9">
-                        <div class="mb-5">
-                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offer 100 % Genuine Assistance</p>
-                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> It’s Faster & Reliable Execution</p>
-                            <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Accurate & Expert Advice</p>
+                        <div class="mb-5 d-flex row-auto">
+                            <div class="col-4 ">  
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offrir une assistance 100 % authentique</p>
+                            </div>
+                            <div class="col-4 ">   
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offrir une assistance 100 % authentiqueOffrir une assistance 100 % authentique</p>
+                            </div>
+                            <div class="col-4 "> 
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>Conseils précis et experts</p>
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap">
                             <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
@@ -121,7 +129,7 @@
                                 </a>
                             </div>
                             <div class="d-flex flex-column justify-content-center">
-                                <span class="text-primary">Have any questions?</span>
+                                <span class="text-primary">Avez-vous des questions?</span>
                                 <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +0123 456 7890</span>
                             </div>
                         </div>
@@ -144,7 +152,7 @@
                         <i class="fas fa-passport"></i>
                     </div>
                     <div class="counter-content">
-                        <h3>Visa Categories</h3>
+                        <h3>Catégories de visas</h3>
                         <div class="d-flex align-items-center justify-content-center">
                             <span class="counter-value" data-toggle="counter-up">31</span>
                             <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
@@ -205,9 +213,9 @@
     <div class="container py-5">
         <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="sub-style">
-                <h5 class="sub-title text-primary px-3">Visa Categories</h5>
+                <h5 class="sub-title text-primary px-3">Catégories de visas</h5>
             </div>
-            <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1>
+            <h1 class="display-5 mb-4">Réussir votre immigration </h1>
             <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
         </div>
         <div class="row g-4">
