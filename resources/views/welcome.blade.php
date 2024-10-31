@@ -14,9 +14,10 @@
             <div class="carousel-item active">
                 <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
-                    <div class="text-center p-4" style="max-width: 11000px;">
-                        <p class="display-1 text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Explorez le monde et ces horizons</p>
-                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting accompagne les étudiants dans leurs projets de voyage à l’international, que ce soit pour des études, des stages ou des échanges culturels. Forts de notre expertise et de notre passion pour l’exploration, nous nous engageons à rendre votre expérience de voyage enrichissante, fluide et mémorable. </p>
+                    <div class=" p-4" style="max-width: 10000px;">
+                        <h5 class="display-1 text-white mb-3 mb-md-4 wow fadeInUp text-center fs-1" data-wow-delay="0.3s">Explorez le monde et ces horizons</h5>
+
+                        <p class="text-white mb-4 mb-md-5 fs-6 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting accompagne les étudiants dans leurs projets de voyage à l’international,  que ce soit pour des études,  <br> des stages ou des échanges culturels. Forts de notre expertise et de notre passion pour l’exploration,  nous nous <br>engageons à rendre votre expérience de voyage enrichissante, fluide et mémorable. </p>
                         {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
                     </div>
                 </div>
@@ -24,9 +25,9 @@
             <div class="carousel-item">
                 <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
-                    <div class="text-center p-4" style="max-width: 11000px;">
-                        <p class="display-1 text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Réaliser votre rêves de vivre et de travailler a l'étranger</p>
-                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel Consulting est spécialisée dans les services de visa pour étudiants, facilitant les démarches d’immigration pour des études, des stages, ou des échanges culturels à l’étranger. Nous offrons un accompagnement personnalisé, adapté aux besoins et aux objectifs de chaque étudiant, pour assurer un processus de demande de visa efficace et sans stress.
+                    <div class="text-center p-4" style="max-width: 10000px;">
+                        <h5 class="display-1 text-white mb-3 mb-md-4 wow fs-1 fadeInUp" data-wow-delay="0.3s">Réaliser votre rêves de vivre et de <br> travailler a l'étranger</h5>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp justify-content-start" data-wow-delay="0.5s">WillTravel Consulting est spécialisée dans les services de visa pour étudiants, <br> facilitant les démarches d’immigration pour des études,des stages,  ou des échanges  <br> culturels à l’étranger.  Nous offrons un accompagnement personnalisé, adapté aux besoins <br> et aux objectifs de chaque étudiant, pour assurer   un processus <br> de demande de visa efficace et sans stress.
                         </p>
                         {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
                     </div>
@@ -36,9 +37,9 @@
             <div class="carousel-item">
                 <img src="img/carousel3.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
-                    <div class="text-center p-4" style="max-width: 11000px;">
-                        <p class="display-1  text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Laisser nous vous guider a chaque etape du processus</p>
-                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel consulting vous offrons un accompagnement personnalisé, adapté aux besoins et aux objectifs de chaque étudiant, pour assurer un processus de demande de visa efficace et sans stress.
+                    <div class="text-center p-4" style="max-width: 10000px;">
+                        <h5 class="display-1  text-white mb-3 mb-md-4 wow fadeInUp fs-1" data-wow-delay="0.3s">Laisser nous vous guider a chaque <br> etape du processus</h5>
+                        <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">WillTravel consulting vous offrons un accompagnement personnalisé, adapté aux besoins et aux  <br> objectifs de chaque étudiant,  pour assurer un processus de demande de visa efficace et sans stress.
                         </p>
                         {{-- <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a> --}}
                     </div>
@@ -86,6 +87,12 @@
     <div class="container py-5">
         <div class="row g-5">
             
+            <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="bg-light rounded">
+                    <img src="img/about1.png" class="" style="margin-bottom: -7px; width: 100%;  height: 600px;" alt="Image">
+                </div>
+            </div>
+
             <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                 <h5 class="sub-title pe-3">À propos de l'entreprise</h5>
                 <h1 class="display-6 mb-4">Nous sommes une agence de conseil en immigration de confiance.</h1>
@@ -131,12 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="bg-light rounded">
-                    <img src="img/about1.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image" style="width: 300px; height: 300px;">
-                    {{-- <img src="img/about-2.png" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image" height="300" width="300"> --}}
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>
@@ -231,13 +233,13 @@
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                     <a href="#" class="h4 text-white mb-0">Visa étudiant</a>
                                 </div>
-                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">voire plus</a>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="{{url('/contact')}}">voire plus</a>
                             </div>
                             <div class="service-content pb-4">
                                 <a href="#"><h4 class="text-white mb-4 py-3">Visa étudiant</h4></a>
                                 <div class="px-4">
                                     <p class="mb-4"> Pour les étudiants qui souhaitent suivre un cursus universitaire ou scolaire dans un établissement à l’étranger pour une période prolongée.                                        .</p>
-                                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#">Explorez plus</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="{{url('/contact')}}" >Explorez plus</a>
                                 </div>
                             </div>
                         </div>
@@ -255,14 +257,14 @@
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                     <a href="#" class="h4 text-white mb-0">Visa de stage </a>
                                 </div>
-                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorez plus</a>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="{{url('/contact')}}">Explorez plus</a>
                             </div>
                             <div class="service-content pb-4">
                                 <a href="#"><h4 class="text-white mb-4 py-3">Visa de stage </h4></a>
                                 <div class="px-4">
                                     <p class="mb-4"> Permet de réaliser un stage dans une entreprise ou une organisation étrangère en tant qu'étudiant inscrit dans un établissement d'enseignement supérieur. Ce visa est souvent requis pour les stages obligatoires ou facultatifs dans le cadre d’un programme de formation.
                                     </p>
-                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore plus</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="{{url('/contact')}}">Explore plus</a>
                                 </div>
                             </div>
                         </div>
@@ -278,15 +280,15 @@
                         <div class="service-title">
                             <div class="service-title-name">
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                    <a href="#" class="h4 text-white mb-0"> Visa "Talent Chercheur" (ou Doctorant)</a>
+                                    <a href="{{url('/contact')}}" class="h4 text-white mb-0"> Visa Talent Chercheur(Doctorant)</a>
                                 </div>
-                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="{{url('/contact')}}">Explore More</a>
                             </div>
                             <div class="service-content pb-4">
-                                <a href="#"><h4 class="text-white mb-4 py-3"> Visa "Talent Chercheur" (ou Doctorant)</h4></a>
+                                <a href="{{url('/contact')}}"><h4 class="text-white mb-4 py-3"> Visa Talent Chercheur (Doctorant)</h4></a>
                                 <div class="px-4">
                                     <p class="mb-4">Pour les étudiants engagés dans un projet de recherche, par exemple une thèse de doctorat, souvent sous le statut de cotutelle. Ce visa est généralement destiné aux étudiants chercheurs ou doctorants collaborant avec une université étrangère</p>
-                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="{{url('/contact')}}">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -302,15 +304,15 @@
                         <div class="service-title">
                             <div class="service-title-name">
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                    <a href="#" class="h4 text-white mb-0">Visa Travail:</a>
+                                    <a href="{{url('/contact')}}" class="h4 text-white mb-0">Visa Travail:</a>
                                 </div>
                                 <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
                             </div>
                             <div class="service-content pb-4">
-                                <a href="#"><h4 class="text-white mb-4 py-3">Visa Travail:</h4></a>
+                                <a href="{{url('/contact')}}"><h4 class="text-white mb-4 py-3">Visa Travail</h4></a>
                                 <div class="px-4">
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
-                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="{{url('/contact')}}">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -326,16 +328,16 @@
                         <div class="service-title">
                             <div class="service-title-name">
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                    <a href="#" class="h4 text-white mb-0">Visa d’échange culturel</a>
+                                    <a href="{{url('/contact')}}" class="h4 text-white mb-0">Visa d’échange culturel</a>
                                 </div>
-                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="{{url('/contact')}}">Explore More</a>
                             </div>
                             <div class="service-content pb-4">
-                                <a href="#"><h4 class="text-white mb-4 py-3">Visa d’échange culturel</h4></a>
+                                <a href="{{url('/contact')}}"><h4 class="text-white mb-4 py-3">Visa d’échange culturel</h4></a>
                                 <div class="px-4">
                                     <p class="mb-4">Délivré aux étudiants participant à un programme d’échange culturel ou éducatif. Il peut concerner des étudiants en échange académique, des programmes d’immersion linguistique, ou des cotutelles internationales.
                                     </p>
-                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="{{url('/contact')}}">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -351,15 +353,15 @@
                         <div class="service-title">
                             <div class="service-title-name">
                                 <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                    <a href="#" class="h4 text-white mb-0">visa tourisme</a>
+                                    <a href="{{url('/contact')}}" class="h4 text-white mb-0">visa tourisme</a>
                                 </div>
                                 <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
                             </div>
                             <div class="service-content pb-4">
-                                <a href="#"><h4 class="text-white mb-4 py-3">visa toutisme</h4></a>
+                                <a href="{{url('/contact')}}"><h4 class="text-white mb-4 py-3">visa toutisme</h4></a>
                                 <div class="px-4">
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
-                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="{{url('/contact')}}">Explore More</a>
                                 </div>
                             </div>
                         </div>
