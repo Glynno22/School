@@ -132,8 +132,8 @@
                             </div>
                             <div class="d-flex flex-column justify-content-center">
                                 <span class="text-primary">Avez-vous des questions?</span>
-                                <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;"> +0123 456 7890</span>
-                            </div>
+                                <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;"> <h5 class="text-primary">CONTACT:</h5> +0123 456 7890</span>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -462,8 +462,22 @@
                             <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
                         </div>
                         <div class="office-content d-flex flex-column">
-                            <h4 class="mb-2">Australia</h4>
+                            <h4 class="mb-2">ALLEMAGNE</h4>
                             <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">BELGIQUE</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
                             <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
                             <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
                         </div>
@@ -482,27 +496,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="office-item p-4">
-                        <div class="office-img mb-4">
-                            <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
-                        </div>
-                        <div class="office-content d-flex flex-column">
-                            <h4 class="mb-2">United Kingdom</h4>
-                            <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
-                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="office-item p-4">
                         <div class="office-img mb-4">
                             <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
                         </div>
                         <div class="office-content d-flex flex-column">
-                            <h4 class="mb-2">India</h4>
+                            <h4 class="mb-2">CONGO</h4>
                             <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a>
+                            <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
+                            <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="office-item p-4">
+                        <div class="office-img mb-4">
+                            <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="office-content d-flex flex-column">
+                            <h4 class="mb-2">FRANCE</h4>
+                            <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a>
                             <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
                             <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
                         </div>
