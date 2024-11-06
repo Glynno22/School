@@ -5,11 +5,11 @@
    <!-- Header Start -->
    <div class="container-fluid bg-breadcrumb">
     <div class="container text-center py-5" style="max-width: 900px;">
-        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Témoignage</h1>
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Testimonial</h1>
         <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
-            <li class="breadcrumb-item"><a href="index.html" class="text-white">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
             <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
-            <li class="breadcrumb-item active text-secondary">témoignage</li>
+            <li class="breadcrumb-item active text-secondary">Testimonial</li>
         </ol>    
     </div>
 </div>
@@ -20,9 +20,9 @@
     <div class="container py-5">
         <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="sub-style">
-                <h5 class="sub-title text-primary px-3">NOS CLIENTS RIVIENS</h5>
+                <h5 class="sub-title text-primary px-3">OUR CLIENTS RIVIEWS</h5>
             </div>
-            <h1 class="display-5 mb-4">Ce que disent nos clients</h1>
+            <h1 class="display-5 mb-4">What Our Clients Say</h1>
             <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
         </div>
         <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
@@ -43,8 +43,8 @@
                         <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="img">
                     </div>
                     <div class="my-auto">
-                        <h5>Tchoffo Brayan</h5>
-                        <p class="mb-0">Etudiant</p>
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
                     </div>
                 </div>
             </div>
@@ -65,8 +65,8 @@
                         <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="img">
                     </div>
                     <div class="my-auto">
-                        <h5>Brayan Fullstack</h5>
-                        <p class="mb-0">DevOps</p>
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
                         <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" alt="img">
                     </div>
                     <div class="my-auto">
-                        <h5>Tala Loic</h5>
-                        <p class="mb-0">UX/UI Design</p>
+                        <h5>Person Name</h5>
+                        <p class="mb-0">Profession</p>
                     </div>
                 </div>
             </div>
