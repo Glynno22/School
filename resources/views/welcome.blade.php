@@ -8,7 +8,6 @@
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -102,8 +101,7 @@
                     <div class="col-4 col-md-3">
                         <div class="bg-light text-center rounded p-3">
                             <div class="mb-2">
-                                <i class="fa-solid fa-circle-check fa-4x text-primary"></i>
-                                
+                                <i class="fas fa-ticket-alt fa-4x text-primary"></i>
                             </div>
                             <h1 class="display-5 fw-bold mb-2">04</h1>
                             <p class="text-muted mb-0">Anneés d'expériences</p>
@@ -155,7 +153,7 @@
                         <i class="fas fa-passport"></i>
                     </div>
                     <div class="counter-content">
-                        <h3>Catégories de visas</h3>
+                        <h3>Visa Categories</h3>
                         <div class="d-flex align-items-center justify-content-center">
                             <span class="counter-value" data-toggle="counter-up">31</span>
                             <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
@@ -216,7 +214,7 @@
     <div class="container py-5">
         <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="sub-style">
-                <h5 class="sub-title text-primary px-3">Catégories de visas</h5>
+                <h5 class="sub-title text-primary px-3">Visa Categories</h5>
             </div>
             <h1 class="display-5 mb-4">Réussissez Votre Projet d'immigration pour étude </h1>
             <p class="mb-0"> Notre Agence vous proposez un accompagnement adapté à chaque type de visa pour étudiants, afin de répondre aux spécificités de votre projet. Que ce soit pour un visa étudiant, un visa de stage, un visa d’échange culturel, etc, notre expertise vous aide à comprendre les exigences, à préparer les documents nécessaires et à maximiser vos chances de succès.</p>
